@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import img from "./img/logo.png"
 function App() {
+const nome = 'Joao'
+
+const onClickBotao = () => {
+  alert("Botão foi clicado!");
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <div className="container">
+        <h1>Aprenda React na Labenu!</h1>
+        <div>
+          <div>
+            <img className="Logo" src={img} alt="logo"/>
+          </div>
+          <div>
+            <a href="https://labenu.com.br">Site da Labenu</a>
+          </div>
+          <div>
+            <button onClick={onClickBotao}> Clique aqui! </button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
